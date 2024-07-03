@@ -24,6 +24,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
+// ---- Added to test the Tesla interface ----
+
 function buildTeslaModelS (teslaObj: TeslaModelS) {
   console.log("Car length = ", teslaObj.length)
 }
