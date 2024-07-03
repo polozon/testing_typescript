@@ -2,7 +2,8 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
-import TeslaModelS from './interfaces.ts'
+import { TeslaModelS } from './interfaces.ts'
+import { Pair } from './interfaces.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -44,3 +45,12 @@ buildTeslaModelS({
       return remCharging
   }
 })
+
+// Look at https://www.typescripttutorial.net/typescript-tutorial/typescript-generic-interfaces/
+
+let month: Pair<string, number> = {
+  key: 'Jan',
+  value: 1
+};
+
+console.log(month.key);

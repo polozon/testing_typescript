@@ -10,3 +10,6 @@ npm create vite@latest
 - Added `src/interfaces.ts`, code from [this article about interfaces](https://blog.logrocket.com/understanding-using-interfaces-typescript/)
 - Used it from `main.ts`
 
+## Run 
+
+    npm run dev

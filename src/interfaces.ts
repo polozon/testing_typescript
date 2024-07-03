@@ -1,4 +1,4 @@
-interface TeslaModelS {
+export interface TeslaModelS {
     length: number;
     width: number;
     wheelbase: number;
@@ -7,4 +7,10 @@ interface TeslaModelS {
     getRemCharging: () => number;
 }
 
-export default TeslaModelS;
+export interface Pair<K, V> {
+    key: K;
+    value: V;
+}
+
+//export type as TeslaModelS
+//export type as Pair<K, V> 
