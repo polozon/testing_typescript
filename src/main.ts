@@ -46,6 +46,8 @@ buildTeslaModelS({
   }
 })
 
+//------------------------------
+// Generics
 // Look at https://www.typescripttutorial.net/typescript-tutorial/typescript-generic-interfaces/
 
 let month: Pair<string, number> = {
@@ -53,4 +55,17 @@ let month: Pair<string, number> = {
   value: 1
 };
 
-console.log(month.key);
+console.log("Pair key is:", month.key);
+
+//------------------------------
+// Using union, defined with type
+// https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#composing-types
+
+type WindowStates = "open" | "closed" | "minimized";
+let state:WindowStates = "closed"  // vscode will help
+// Print it
+console.log('State is:', state)
+
+type StringArray = Array<string>;
+let a:StringArray =  [ "One", "Two" ]
+console.log(a[1])

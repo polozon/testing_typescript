@@ -2,6 +2,21 @@
 
 Project for testing Typescript, created with [vite](https://vitejs.dev/guide/):
 
+## Install
+
+```bash
+git clone https://github.com/polozon/testing_typescript.git
+cd testing_typescript
+npm install
+code .
+# From inside vscode
+npn run dev 
+```
+
+## Project creation
+
+Make with vite:
+
 ```bash
 npm create vite@latest
 ```
